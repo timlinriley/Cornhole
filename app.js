@@ -37,7 +37,8 @@ displayTotal()
                 // land in hole: 20%
     // throw functions:
             const p1ThrowBag = () => {
-                throwOutcome = Math.random()
+                p1ThrowCounter()
+                 throwOutcome = Math.random()
                 console.log(throwOutcome)
               // land off board:
                 if (throwOutcome <= 0.4){
@@ -52,9 +53,11 @@ displayTotal()
                      player1Round += 3;
                 } 
                 displayRound()
+                
             }
 
             const p2ThrowBag = () => {
+                p2ThrowCounter()
                 throwOutcome = Math.random()
                 console.log(throwOutcome)
               // land off board:
@@ -70,17 +73,32 @@ displayTotal()
                      player2Round += 3;
                 } 
                 displayRound()
+               
+
             }
+// throw button on click:
+            // done!!
 
-
+        // STYLING TO BE DONE AFTER GAME LOGIC COMPLETE:
             // append bags to board game based on above outcome
               // throwing: 
                 // player A throws : red color appears on board
                 // player B thows: blue color appears on board
-// throw button on click:
-            // done!!
+let p1Throws = 0
+let p2Throws = 0
+            const p1ThrowCounter = () => {
+                p1Throws ++
+                console.log(p1Throws)
+            }
+
+            const p2ThrowCounter = () => {
+                p2Throws ++
+                console.log(p1Throws) 
+            }
+
     // round =
         // player A throws 4 times
+  
         // player B throws 4 times
         // round is complete after 4 throws per team
         // show bags remaining by starting w/ 4 and 'hiding' each div after throw button pressed
