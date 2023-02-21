@@ -128,6 +128,7 @@ if (p2Throws == p2Limit){
             // this is already accomplished in ThrowBag functions
 
         // after 4 throws per team calculate point difference if any and add to team total points equal to +point differential for that round (if player A throw counter = 4 && player B throw counter =4 then calculate total score)
+        // calculate and increment total score (maybe: if player A thrown 4 times and player B thrown 4 times, check round scores, if statemente like 'if A round score > B round score then A round score - B round score = A total score +A round score)
         const calculateTotal = () => {
             if (p1Throws === 4 && p2Throws === 4){
                 if (player1Round > player2Round){
@@ -141,6 +142,7 @@ if (p2Throws == p2Limit){
                 }
             }
         }
+               // reset round score and calculate total score from previous round:
         const newRound = () => {
             calculateTotal()
             displayTotal()
@@ -154,17 +156,29 @@ if (p2Throws == p2Limit){
         console.log(player2Round)
         console.log(player1Total)
         console.log(player2Total)
+        // add throw button event listenrs back after being removed after 4 throws from previous round:
         const evP1 = document.querySelector('.p1Throw')
         evP1.addEventListener('click', p1ThrowBag)
         const evP2 = document.querySelector('.p2Throw')
         evP2.addEventListener('click', p2ThrowBag) 
+        winner()
         }
-    const nr = document.querySelector('.newRound')
-    nr.addEventListener('click', newRound)
+        // new round listener
 
+    const nr = document.querySelector('.newRound')
+    nr.addEventListener('click', newRound) 
+      
+    const winner = () => {
+        if (player1Total >= 21){
+            alert('Player 1 wins')
+        } else if (player2Total >= 21){
+            alert('Player 2 wins')
+        } 
+    }
+ 
     // after round complete:
-        // calculate and increment total score (maybe: if player A thrown 4 times and player B thrown 4 times, check round scores, if statemente like 'if A round score > B round score then A round score - B round score = A total score +A round score)
-        // reset round score without effecting total score
+       
+ 
             // alert new round starting
         // start new round if total score < 21
 
