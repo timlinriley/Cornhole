@@ -94,9 +94,13 @@ let p2Throws = 0
             const p2ThrowCounter = () => {
                 p2Throws ++
                 console.log(p2Throws) 
+
             }
+             // round =
+       
 let p1Limit = 4
 let p2Limit = 4
+ // player A throws 4 times
 const evP1 = document.querySelector('.p1Throw')
 evP1.addEventListener('click', p1ThrowBag) 
 const p1Limiter = () => {
@@ -104,7 +108,7 @@ if (p1Throws == p1Limit){
     evP1.removeEventListener('click', p1ThrowBag)
 }
 }
-
+        // player B throws 4 times
 const evP2 = document.querySelector('.p2Throw')
 evP2.addEventListener('click', p2ThrowBag) 
 const p2Limiter = () => {
@@ -113,16 +117,47 @@ if (p2Throws == p2Limit){
 }
 }
 
-    // round =
-        // player A throws 4 times
-  
-        // player B throws 4 times
-        // round is complete after 4 throws per team
-        // show bags remaining by starting w/ 4 and 'hiding' each div after throw button pressed
-        // increment round score based on where the bag landed
-        // after 4 throws per team calculate point difference if any and add to team total points equal to +point differential for that round (if player A throw counter = 4 && player B throw counter =4 then calculate total score)
-
    
+  
+
+        // round is complete after 4 throws per team
+    // TO BE STYLED AFTER GAME LOGIC COMPLETE:
+        // show bags remaining by starting w/ 4 and 'hiding' each div after throw button pressed
+
+        // increment round score based on where the bag landed
+            // this is already accomplished in ThrowBag functions
+
+        // after 4 throws per team calculate point difference if any and add to team total points equal to +point differential for that round (if player A throw counter = 4 && player B throw counter =4 then calculate total score)
+        const calculateTotal = () => {
+            if (p1Throws === 4 && p2Throws === 4){
+                if (player1Round > player2Round){
+                let diff1 = player1Round -= player2Round; 
+                player1Total += diff1
+                } else if (player1Round < player2Round){
+                let diff2 = player2Round -= player1Round;
+                player2Total += diff2
+                } else {
+                    alert('You tied this round! No score added to total')
+                }
+            }
+        }
+        const newRound = () => {
+            calculateTotal()
+            displayTotal()
+            displayRound()
+            let p1Throws = 0;
+            let p2Throws = 0;
+            let player1Round = 0;
+            let player2Round = 0;
+        displayRound()
+        
+        console.log(player1Round)
+        console.log(player2Round)
+        console.log(player1Total)
+        console.log(player2Total)
+        }
+    const nr = document.querySelector('.newRound')
+    nr.addEventListener('click', newRound)
 
     // after round complete:
         // calculate and increment total score (maybe: if player A thrown 4 times and player B thrown 4 times, check round scores, if statemente like 'if A round score > B round score then A round score - B round score = A total score +A round score)
