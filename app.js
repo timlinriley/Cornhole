@@ -29,17 +29,56 @@ const displayRound = () => {
 }
 displayRound()
 displayTotal()
-    // throw button on click:
-                // throw function:
+    // Throwing:
+    let throwOutcome = 0
             // assign throw outcome potential based on %:
                 // land off board: 40%
                 // land on board 1 point: 40%
                 // land in hole: 20%
+    // throw functions:
+            const p1ThrowBag = () => {
+                throwOutcome = Math.random()
+                console.log(throwOutcome)
+              // land off board:
+                if (throwOutcome <= 0.4){
+                    console.log('p1 throw landed off board')
+                    }
+                else if (throwOutcome > 0.4 && throwOutcome <= 0.8){
+                    console.log('p1 throw landed on board')
+                     player1Round += 1;
+                }
+                else {
+                    console.log('p1 throw in the hole!')
+                     player1Round += 3;
+                } 
+                displayRound()
+            }
+
+            const p2ThrowBag = () => {
+                throwOutcome = Math.random()
+                console.log(throwOutcome)
+              // land off board:
+                if (throwOutcome <= 0.4){
+                    console.log('p2 throw landed off board')
+                    }
+                else if (throwOutcome > 0.4 && throwOutcome <= 0.8){
+                    console.log('p2 throw landed on board')
+                     player2Round += 1;
+                }
+                else {
+                    console.log('p2 throw in the hole!')
+                     player2Round += 3;
+                } 
+                displayRound()
+            }
+
+
             // append bags to board game based on above outcome
               // throwing: 
                 // player A throws : red color appears on board
                 // player B thows: blue color appears on board
-
+// throw button on click:
+            // done!!
     // round =
         // player A throws 4 times
         // player B throws 4 times
