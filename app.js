@@ -13,11 +13,22 @@
 let player1Total = 0;
 let player2Total = 0;
     const displayTotal = () => {
-        
+        let p1 = document.querySelector('.player1Total')
+        p1.innerHTML = player1Total
+        let p2 = document.querySelector('.player2Total')
+        p2.innerHTML = player2Total
     }
     // display round scores
 let player1Round = 0;
 let player2Round = 0;
+const displayRound = () => {
+    let p1 = document.querySelector('.player1Round')
+    p1.innerHTML = player1Round
+    let p2 = document.querySelector('.player2Round')
+    p2.innerHTML = player2Round
+}
+displayRound()
+displayTotal()
     // throw button on click:
                 // throw function:
             // assign throw outcome potential based on %:
