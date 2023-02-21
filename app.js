@@ -37,8 +37,9 @@ displayTotal()
                 // land in hole: 20%
     // throw functions:
             const p1ThrowBag = () => {
-                p1ThrowCounter()
-                 throwOutcome = Math.random()
+                p1ThrowCounter() 
+                
+                throwOutcome = Math.random()
                 console.log(throwOutcome)
               // land off board:
                 if (throwOutcome <= 0.4){
@@ -53,7 +54,7 @@ displayTotal()
                      player1Round += 3;
                 } 
                 displayRound()
-                
+                p1Limiter()
             }
 
             const p2ThrowBag = () => {
@@ -73,8 +74,7 @@ displayTotal()
                      player2Round += 3;
                 } 
                 displayRound()
-               
-
+                p2Limiter()            
             }
 // throw button on click:
             // done!!
@@ -93,8 +93,25 @@ let p2Throws = 0
 
             const p2ThrowCounter = () => {
                 p2Throws ++
-                console.log(p1Throws) 
+                console.log(p2Throws) 
             }
+let p1Limit = 4
+let p2Limit = 4
+const evP1 = document.querySelector('.p1Throw')
+evP1.addEventListener('click', p1ThrowBag) 
+const p1Limiter = () => {
+if (p1Throws == p1Limit){
+    evP1.removeEventListener('click', p1ThrowBag)
+}
+}
+
+const evP2 = document.querySelector('.p2Throw')
+evP2.addEventListener('click', p2ThrowBag) 
+const p2Limiter = () => {
+if (p2Throws == p2Limit){
+    evP2.removeEventListener('click', p2ThrowBag)
+}
+}
 
     // round =
         // player A throws 4 times
