@@ -145,16 +145,19 @@ if (p2Throws == p2Limit){
             calculateTotal()
             displayTotal()
             displayRound()
-            let p1Throws = 0;
-            let p2Throws = 0;
-            let player1Round = 0;
-            let player2Round = 0;
+            p1Throws = 0;
+            p2Throws = 0;
+            player1Round = 0;
+            player2Round = 0;
         displayRound()
-        
         console.log(player1Round)
         console.log(player2Round)
         console.log(player1Total)
         console.log(player2Total)
+        const evP1 = document.querySelector('.p1Throw')
+        evP1.addEventListener('click', p1ThrowBag)
+        const evP2 = document.querySelector('.p2Throw')
+        evP2.addEventListener('click', p2ThrowBag) 
         }
     const nr = document.querySelector('.newRound')
     nr.addEventListener('click', newRound)
