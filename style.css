@@ -46,8 +46,79 @@ body{
     border: solid black;
     width: 700px;
     height: 600px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 .gamePlay {
     display: flex;
-  
+     
+}
+
+.p1Board, .p2Board {
+    border: solid blue;
+    width: 180px;
+    height: 220px;
+    margin-top: 80px;
+    background-color: wheat;
+    display: flex;
+    justify-content: center;
+    
+
+}
+.p2Board{
+    margin-left: 150px;
+}
+.boards{
+    display: flex;
+    
+}
+
+.circle{
+    border: solid black;
+    background-color: white;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    margin-top: 40px;
+}
+
+.bags {
+    width:700px;
+    height: 200px;
+    display: flex;
+}
+.p1Bag {
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    animation: bagThrowOn 1s forwards;
+}
+
+.p2Bag {
+    width: 30px;
+    height: 30px;
+    background-color: blue;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Keyframes */
+@keyframes bagThrowOn {
+    0%{transform:translatey(0px)}
+    100%{transform: translatey(-300px)}
 }
