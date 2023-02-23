@@ -232,7 +232,7 @@ body{
 .p2b1On{
     width: 30px;
     height: 30px;
-    background-color: red;
+    background-color: blue;
     border-radius: 25%;
     animation: p2B1On forwards 1s;
   
@@ -240,7 +240,7 @@ body{
 .p2b1Off{
     width: 30px;
     height: 30px;
-    background-color: red;
+    background-color: blue;
     border-radius: 25%;
     animation: p2B1Off forwards 1s;  
 }
@@ -248,7 +248,7 @@ body{
 .p2b1Hole{
     width: 30px;
     height: 30px;
-    background-color: red;
+    background-color:blue;
     border-radius: 25%;
     animation: p2B1Hole forwards 1s;
 }
@@ -258,7 +258,7 @@ body{
 .p2b2On{
     width: 30px;
     height: 30px;
-    background-color: red;
+    background-color: blue;
     border-radius: 25%;
     animation: p2B2On forwards 1s;
   
@@ -266,7 +266,7 @@ body{
 .p2b2Off{
     width: 30px;
     height: 30px;
-    background-color: red;
+    background-color: blue;
     border-radius: 25%;
     animation: p2B2Off forwards 1s;  
 }
@@ -274,7 +274,7 @@ body{
 .p2b2Hole{
     width: 30px;
     height: 30px;
-    background-color: red;
+    background-color: blue;
     border-radius: 25%;
     animation: p2B2Hole forwards 1s;
 }
@@ -285,7 +285,7 @@ body{
 .p2b3On{
     width: 30px;
     height: 30px;
-    background-color: red;
+    background-color: blue;
     border-radius: 25%;
     animation: p2B3On forwards 1s;
   
@@ -293,7 +293,7 @@ body{
 .p2b3Off{
     width: 30px;
     height: 30px;
-    background-color: red;
+    background-color: blue;
     border-radius: 25%;
     animation: p2B3Off forwards 1s;  
 }
@@ -301,7 +301,7 @@ body{
 .p1b3Hole{
     width: 30px;
     height: 30px;
-    background-color: red;
+    background-color: blue;
     border-radius: 25%;
     animation: p2B3Hole forwards 1s;
 }
@@ -312,7 +312,7 @@ body{
 .p2b4On{
     width: 30px;
     height: 30px;
-    background-color: red;
+    background-color: blue;
     border-radius: 25%;
     animation: p2B4On forwards 1s;
   
@@ -320,7 +320,7 @@ body{
 .p2b4Off{
     width: 30px;
     height: 30px;
-    background-color: red;
+    background-color: blue;
     border-radius: 25%;
     animation: p2B4Off forwards 1s;  
 }
@@ -328,7 +328,7 @@ body{
 .p2b4Hole{
     width: 30px;
     height: 30px;
-    background-color: red;
+    background-color: blue;
     border-radius: 25%;
     animation: p2B4Hole forwards 1s;
 }

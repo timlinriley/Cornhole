@@ -75,6 +75,7 @@ displayTotal()
                      player2Round += 3;
                 } 
                 displayRound()
+                p2Animate()
                 p2Limiter()            
             }
 // throw button on click:
@@ -162,6 +163,7 @@ if (p2Throws == p2Limit){
         console.log(player2Round)
         console.log(player1Total)
         console.log(player2Total)
+        resetBags()
         // add throw button event listenrs back after being removed after 4 throws from previous round:
         const evP1 = document.querySelector('.p1Throw')
         evP1.addEventListener('click', p1ThrowBag)
@@ -265,4 +267,74 @@ const p1Animate = () => {
         b4c = document.querySelector('.p1Bag4')
         b4c.setAttribute('class', 'p1b4Hole')
     }
+}
+
+const p2Animate = () => {
+    if (p2Throws === 1 && throwOutcome <= 0.4){
+        b1 = document.querySelector('.p2Bag1')
+        b1.setAttribute('class', 'p2b1Off')
+    }
+    else if (p2Throws === 1 && throwOutcome > 0.4 && throwOutcome <= 0.8){
+        b1b = document.querySelector('.p2Bag1')
+        b1b.setAttribute('class', 'p2b1On')
+    }
+    else if (p2Throws === 1 && throwOutcome > 0.8){
+        b1c = document.querySelector('.p2Bag1')
+        b1c.setAttribute('class', 'p2b1Hole')
+    }
+    else if (p2Throws === 2 && throwOutcome <= 0.4){
+        b2 = document.querySelector('.p2Bag2')
+        b2.setAttribute('class', 'p2b2Off')
+    }
+    else if (p2Throws === 2 && throwOutcome > 0.4 && throwOutcome <= 0.8){
+        b2b = document.querySelector('.p2Bag2')
+        b2b.setAttribute('class', 'p2b2On')
+    }
+    else if (p2Throws === 2 && throwOutcome > 0.8){
+        b2c = document.querySelector('.p2Bag2')
+        b2c.setAttribute('class', 'p2b2Hole')
+    }
+    else if (p2Throws === 3 && throwOutcome <= 0.4){
+        b3 = document.querySelector('.p2Bag3')
+        b3.setAttribute('class', 'p2b3Off')
+    }
+    else if (p2Throws === 3 && throwOutcome > 0.4 && throwOutcome <= 0.8){
+        b3b = document.querySelector('.p2Bag3')
+        b3b.setAttribute('class', 'p2b3On')
+    }
+    else if (p2Throws === 3 && throwOutcome > 0.8){
+        b3c = document.querySelector('.p2Bag3')
+        b3c.setAttribute('class', 'p2b3Hole')
+    }
+    else if (p2Throws === 4 && throwOutcome <= 0.4){
+        b4 = document.querySelector('.p2Bag4')
+        b4.setAttribute('class', 'p2b4Off')
+    }
+    else if (p2Throws === 4 && throwOutcome > 0.4 && throwOutcome <= 0.8){
+        b4b = document.querySelector('.p2Bag4')
+        b4b.setAttribute('class', 'p2b4On')
+    }
+    else if (p2Throws === 4 && throwOutcome > 0.8){
+        b4c = document.querySelector('.p2Bag4')
+        b4c.setAttribute('class', 'p2b4Hole')
+    }
+}
+
+const resetBags = () => {
+    p1b1 = document.querySelector('#p1b1')
+    p1b1.setAttribute('class', 'p1Bag1')
+    p1b2 = document.querySelector('#p1b2')
+    p1b2.setAttribute('class', 'p1Bag2')
+    p1b3 = document.querySelector('#p1b3')
+    p1b3.setAttribute('class','p1Bag3')
+    p1b4 = document.querySelector('#p1b4')
+    p1b4.setAttribute('class', 'p1Bag4')
+    p2b1 = document.querySelector('#p2b1')
+    p2b1.setAttribute('class', 'p2Bag1')
+    p2b2 = document.querySelector('#p2b2')
+    p2b2.setAttribute('class','p2Bag2')
+    p2b3 = document.querySelector('#p2b3')
+    p2b3.setAttribute('class', 'p2Bag3')
+    p2b4 = document.querySelector('#p2b4')
+    p2b4.setAttribute('class', 'p2Bag4')
 }
