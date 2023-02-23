@@ -170,9 +170,37 @@ if (p2Throws == p2Limit){
       
     const winner = () => {
         if (player1Total >= 21){
-            alert('Player 1 wins')
+          const winState = prompt(`Player 1 wins! To play again enter 'a' or 'b' to exit`)
+            if (winState.toLowerCase() === 'a'){
+
+                p1Throws = 0;
+                p2Throws = 0;
+                player1Round = 0;
+                player2Round = 0;
+                player1Total = 0;
+                player2Total = 0;
+                displayTotal()
+                displayRound()
+            }
+            else {
+                alert('Thanks for playing')
+            }
         } else if (player2Total >= 21){
-            alert('Player 2 wins')
+            const winState = prompt(`Player 2 wins! To play again enter 'a' or 'b' to exit`)
+            if (winState.toLowerCase() === 'a'){
+
+                p1Throws = 0;
+                p2Throws = 0;
+                player1Round = 0;
+                player2Round = 0;
+                player1Total = 0;
+                player2Total = 0;
+                displayTotal()
+                displayRound()
+            }
+            else {
+                alert('Thanks for playing')
+            }
         } 
     }
  
