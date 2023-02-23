@@ -39,7 +39,7 @@ displayTotal()
             const p1ThrowBag = () => {
                 p1ThrowCounter() 
                 throwOutcome = Math.random()
-                p1Animate()
+                
                 console.log(throwOutcome)
               // land off board:
                 if (throwOutcome <= 0.4){
@@ -54,6 +54,7 @@ displayTotal()
                      player1Round += 3;
                 } 
                 displayRound()
+                p1Animate()
                 p1Limiter()
             }
 
@@ -216,51 +217,51 @@ if (p2Throws == p2Limit){
         // Change bag classes to animate throws:
 
 const p1Animate = () => {
-    if (p1Throws = 1 && throwOutcome <= 0.4){
+    if (p1Throws === 1 && throwOutcome <= 0.4){
         b1 = document.querySelector('.p1Bag1')
         b1.setAttribute('class', 'p1b1Off')
     }
-    else if (p1Throws = 1 && throwOutcome > 0.4 && throwOutcome <= 0.8){
+    else if (p1Throws === 1 && throwOutcome > 0.4 && throwOutcome <= 0.8){
         b1b = document.querySelector('.p1Bag1')
         b1b.setAttribute('class', 'p1b1On')
     }
-    else if (p1Throws = 1 && throwOutcome > 0.8){
+    else if (p1Throws === 1 && throwOutcome > 0.8){
         b1c = document.querySelector('.p1Bag1')
         b1c.setAttribute('class', 'p1b1Hole')
     }
-    else if (p1Throws = 2 && throwOutcome <= 0.4){
+    else if (p1Throws === 2 && throwOutcome <= 0.4){
         b2 = document.querySelector('.p1Bag2')
         b2.setAttribute('class', 'p1b2Off')
     }
-    else if (p1Throws = 2 && throwOutcome > 0.4 && throwOutcome <= 0.8){
+    else if (p1Throws === 2 && throwOutcome > 0.4 && throwOutcome <= 0.8){
         b2b = document.querySelector('.p1Bag2')
         b2b.setAttribute('class', 'p1b2On')
     }
-    else if (p1Throws = 2 && throwOutcome > 0.8){
+    else if (p1Throws === 2 && throwOutcome > 0.8){
         b2c = document.querySelector('.p1Bag2')
         b2c.setAttribute('class', 'p1b2Hole')
     }
-    else if (p1Throws = 3 && throwOutcome <= 0.4){
+    else if (p1Throws === 3 && throwOutcome <= 0.4){
         b3 = document.querySelector('.p1Bag3')
         b3.setAttribute('class', 'p1b3Off')
     }
-    else if (p1Throws = 3 && throwOutcome > 0.4 && throwOutcome <= 0.8){
+    else if (p1Throws === 3 && throwOutcome > 0.4 && throwOutcome <= 0.8){
         b3b = document.querySelector('.p1Bag3')
         b3b.setAttribute('class', 'p1b3On')
     }
-    else if (p1Throws = 3 && throwOutcome > 0.8){
+    else if (p1Throws === 3 && throwOutcome > 0.8){
         b3c = document.querySelector('.p1Bag3')
         b3c.setAttribute('class', 'p1b3Hole')
     }
-    else if (p1Throws = 4 && throwOutcome <= 0.4){
+    else if (p1Throws === 4 && throwOutcome <= 0.4){
         b4 = document.querySelector('.p1Bag4')
         b4.setAttribute('class', 'p1b4Off')
     }
-    else if (p1Throws = 4 && throwOutcome > 0.4 && throwOutcome <= 0.8){
+    else if (p1Throws === 4 && throwOutcome > 0.4 && throwOutcome <= 0.8){
         b4b = document.querySelector('.p1Bag4')
         b4b.setAttribute('class', 'p1b4On')
     }
-    else if (p1Throws = 4 && throwOutcome > 0.8){
+    else if (p1Throws === 4 && throwOutcome > 0.8){
         b4c = document.querySelector('.p1Bag4')
         b4c.setAttribute('class', 'p1b4Hole')
     }
