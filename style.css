@@ -1,10 +1,36 @@
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.throwButtons{
+    display: flex;
+    margin: 1em;
+}
 .p1Throw, .p2Throw {
     border: solid black;
-    height: 100px;
+    height: 35px;
     width: 100px;
+    margin: 1em;
+    text-align: center;
+    padding-top: 15px;
+    border-radius: 20%;
 }
 .newRound {
     border: solid black;
     height: 100px;
     width: 100px;
+    border: solid black;
+    height: 35px;
+    width: 100px;
+    margin: 1em;
+    text-align: center;
+    padding-top: 15px;
+    border-radius: 20%;
+    background-color: gray;
+}
+.newRound:hover {
+    opacity: 0.7;
+}
+
+.roundScore, .totalScore {
+    display: flex;
 }

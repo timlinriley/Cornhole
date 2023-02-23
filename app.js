@@ -142,6 +142,11 @@ if (p2Throws == p2Limit){
                 }
             }
         }
+
+
+ 
+        // start new round if total score < 21
+
                // reset round score and calculate total score from previous round:
         const newRound = () => {
             calculateTotal()
@@ -168,11 +173,12 @@ if (p2Throws == p2Limit){
     const nr = document.querySelector('.newRound')
     nr.addEventListener('click', newRound) 
       
+
+//  maybe add change to bg color to match winner bag color to indicate win as well that then switches back once the prompt is run. 
     const winner = () => {
         if (player1Total >= 21){
           const winState = prompt(`Player 1 wins! To play again enter 'a' or 'b' to exit`)
             if (winState.toLowerCase() === 'a'){
-
                 p1Throws = 0;
                 p2Throws = 0;
                 player1Round = 0;
@@ -188,7 +194,6 @@ if (p2Throws == p2Limit){
         } else if (player2Total >= 21){
             const winState = prompt(`Player 2 wins! To play again enter 'a' or 'b' to exit`)
             if (winState.toLowerCase() === 'a'){
-
                 p1Throws = 0;
                 p2Throws = 0;
                 player1Round = 0;
@@ -207,8 +212,6 @@ if (p2Throws == p2Limit){
     // after round complete:
        
  
-            // alert new round starting
-        // start new round if total score < 21
 
     // Winner:
         // if either team point total >= 21 that player is winner
