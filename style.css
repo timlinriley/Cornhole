@@ -104,7 +104,7 @@ body{
     height: 30px;
     background-color: red;
     border-radius: 25%;
-    animation: p1B4Off forwards 1s;
+    
     
     /* animation: bagThrowHole 1s forwards; */
 }
@@ -114,6 +114,7 @@ body{
     height: 30px;
     background-color: blue;
     border-radius: 25%;
+    animation: p2B4Hole forwards 1.5s;
 }
 
 
@@ -226,6 +227,112 @@ body{
     animation: p1B4Hole forwards 1s;
 }
 
+/* P2 Classes to switch to on throw */
+/* P1 B1 */
+
+.p2b1On{
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    border-radius: 25%;
+    animation: p2B1On forwards 1s;
+  
+}
+.p2b1Off{
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    border-radius: 25%;
+    animation: p2B1Off forwards 1s;  
+}
+
+.p2b1Hole{
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    border-radius: 25%;
+    animation: p2B1Hole forwards 1s;
+}
+
+/* P2 B2 */
+
+.p2b2On{
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    border-radius: 25%;
+    animation: p2B2On forwards 1s;
+  
+}
+.p2b2Off{
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    border-radius: 25%;
+    animation: p2B2Off forwards 1s;  
+}
+
+.p2b2Hole{
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    border-radius: 25%;
+    animation: p2B2Hole forwards 1s;
+}
+
+
+/* P2 B3 */
+
+.p2b3On{
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    border-radius: 25%;
+    animation: p2B3On forwards 1s;
+  
+}
+.p2b3Off{
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    border-radius: 25%;
+    animation: p2B3Off forwards 1s;  
+}
+
+.p1b3Hole{
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    border-radius: 25%;
+    animation: p2B3Hole forwards 1s;
+}
+
+
+/* P2 B4 */
+
+.p2b4On{
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    border-radius: 25%;
+    animation: p2B4On forwards 1s;
+  
+}
+.p2b4Off{
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    border-radius: 25%;
+    animation: p2B4Off forwards 1s;  
+}
+
+.p2b4Hole{
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    border-radius: 25%;
+    animation: p2B4Hole forwards 1s;
+}
 
 
 /* Keyframes */
@@ -290,6 +397,74 @@ body{
     100%{transform:translate(-98px, -388px)}
 }
 @keyframes p1B4Off {
+    0%{transform:translate(0,0)}
+    100%{transform:translate(-80px, -200px)}
+}
+
+/* P2!!! */
+
+
+/* P2 Keyframes */
+/* p2 b1 */
+
+@keyframes p2B1On {
+    0%{transform:translate(px, 0px;)}
+    100%{transform: translate(25px,-300px)}
+}
+
+@keyframes p2B1Hole {
+    0%{transform:translate(0,0)}
+    100%{transform:translate(90px, -388px)}
+}
+@keyframes p2B1Off {
+    0%{transform:translate(0,0)}
+    100%{transform:translate(-40px, -405px)}
+}
+
+/* p2 b2 */
+
+@keyframes p2B2On {
+    0%{transform:translate(px, 0px;)}
+    100%{transform: translate(25px,-350px)}
+}
+
+@keyframes p2B2Hole {
+    0%{transform:translate(0,0)}
+    100%{transform:translate(28px, -388px)}
+}
+@keyframes p2B2Off {
+    0%{transform:translate(0,0)}
+    100%{transform:translate(-80px, -300px)}
+}
+
+/* P2 B3 */
+
+@keyframes p2B3On {
+    0%{transform:translate(px, 0px;)}
+    100%{transform: translate(25px,-350px)}
+}
+
+@keyframes p2B3Hole {
+    0%{transform:translate(0,0)}
+    100%{transform:translate(-28px, -388px)}
+}
+@keyframes p2B3Off {
+    0%{transform:translate(0,0)}
+    100%{transform:translate(-80px, -200px)}
+}
+
+/* P2 B4 */
+
+@keyframes p2B4On {
+    0%{transform:translate(px, 0px;)}
+    100%{transform: translate(-35px,-300px)}
+}
+
+@keyframes p2B4Hole {
+    0%{transform:translate(0,0)}
+    100%{transform:translate(-98px, -388px)}
+}
+@keyframes p2B4Off {
     0%{transform:translate(0,0)}
     100%{transform:translate(-80px, -200px)}
 }
