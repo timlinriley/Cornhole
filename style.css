@@ -83,42 +83,213 @@ body{
     margin-top: 40px;
 }
 
-.bags {
-    width:700px;
-    height: 200px;
+.p1Bags {
+    width:300px;
+    height: 40px;
     display: flex;
+    /* border:solid red; */
+    margin-top: 200px;
+    justify-content: space-evenly;
 }
-.p1Bag {
+.p2Bags{
+    width:300px;
+    height: 40px;
+    display: flex;
+    /* border: solid blue; */
+    margin-top: 200px;
+    justify-content: space-evenly;
+}
+.p1Bag1, .p1Bag2, .p1Bag3, .p1Bag4 {
     width: 30px;
     height: 30px;
     background-color: red;
-    animation: bagThrowOn 1s forwards;
+    border-radius: 25%;
+    animation: p1B4Off forwards 1s;
+    
+    /* animation: bagThrowHole 1s forwards; */
 }
 
-.p2Bag {
+.p2Bag1, .p2Bag2, .p2Bag3, .p2Bag4 {
     width: 30px;
     height: 30px;
     background-color: blue;
+    border-radius: 25%;
 }
 
 
 
+/* Animated bag classes to switch to on throw click */
+
+/* P1 B1 */
+
+.p1b1On{
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    border-radius: 25%;
+    animation: p1B1On forwards 1s;
+  
+}
+.p1b1Off{
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    border-radius: 25%;
+    animation: p1B2Off forwards 1s;  
+}
+
+.p1b1Hole{
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    border-radius: 25%;
+    animation: p1B1Hole forwards 1s;
+}
+
+/* P1 B2 */
+
+.p1b2On{
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    border-radius: 25%;
+    animation: p1B2On forwards 1s;
+  
+}
+.p1b2Off{
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    border-radius: 25%;
+    animation: p1B2Hole forwards 1s;  
+}
+
+.p1b2Hole{
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    border-radius: 25%;
+    animation: p1B2Hole forwards 1s;
+}
 
 
+/* P1 B3 */
+
+.p1b3On{
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    border-radius: 25%;
+    animation: p1B3On forwards 1s;
+  
+}
+.p1b3Off{
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    border-radius: 25%;
+    animation: p1B3Hole forwards 1s;  
+}
+
+.p1b3Hole{
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    border-radius: 25%;
+    animation: p1B3Hole forwards 1s;
+}
 
 
+/* P1 B4 */
 
+.p1b4On{
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    border-radius: 25%;
+    animation: p1B4On forwards 1s;
+  
+}
+.p1b4Off{
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    border-radius: 25%;
+    animation: p1B4Hole forwards 1s;  
+}
 
-
-
-
-
-
+.p1b4Hole{
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    border-radius: 25%;
+    animation: p1B4Hole forwards 1s;
+}
 
 
 
 /* Keyframes */
-@keyframes bagThrowOn {
-    0%{transform:translatey(0px)}
-    100%{transform: translatey(-300px)}
+
+/* p1 b1 */
+
+@keyframes p1B1On {
+    0%{transform:translate(px, 0px;)}
+    100%{transform: translate(25px,-300px)}
+}
+
+@keyframes p1B1Hole {
+    0%{transform:translate(0,0)}
+    100%{transform:translate(90px, -388px)}
+}
+@keyframes p1B1Off {
+    0%{transform:translate(0,0)}
+    100%{transform:translate(-40px, -405px)}
+}
+
+/* p1 b2 */
+
+@keyframes p1B2On {
+    0%{transform:translate(px, 0px;)}
+    100%{transform: translate(25px,-350px)}
+}
+
+@keyframes p1B2Hole {
+    0%{transform:translate(0,0)}
+    100%{transform:translate(28px, -388px)}
+}
+@keyframes p1B2Off {
+    0%{transform:translate(0,0)}
+    100%{transform:translate(-80px, -300px)}
+}
+
+/* P1 B3 */
+
+@keyframes p1B3On {
+    0%{transform:translate(px, 0px;)}
+    100%{transform: translate(25px,-350px)}
+}
+
+@keyframes p1B3Hole {
+    0%{transform:translate(0,0)}
+    100%{transform:translate(-28px, -388px)}
+}
+@keyframes p1B3Off {
+    0%{transform:translate(0,0)}
+    100%{transform:translate(-80px, -200px)}
+}
+
+/* P1 B4 */
+
+@keyframes p1B4On {
+    0%{transform:translate(px, 0px;)}
+    100%{transform: translate(-35px,-300px)}
+}
+
+@keyframes p1B4Hole {
+    0%{transform:translate(0,0)}
+    100%{transform:translate(-98px, -388px)}
+}
+@keyframes p1B4Off {
+    0%{transform:translate(0,0)}
+    100%{transform:translate(-80px, -200px)}
 }
