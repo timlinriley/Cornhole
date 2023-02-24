@@ -37,6 +37,19 @@
             bg3.setAttribute('class', 'roundScore' )
         }
     }   
+    const won = () => {
+        if (player1Total >= 21){
+            const bg = document.querySelector('body')
+            bg.setAttribute('style', "background-color: red")
+        }
+        else if (player2Total >= 21){
+            const bg = document.querySelector('body')
+            bg.setAttribute('style', "background-color: blue")
+        } else  {
+            const bg = document.querySelector('body')
+            bg.setAttribute('style', "background-color:  rgb(55, 39, 39)")
+        }
+    }
     
 let player1Total = 0;
 let player2Total = 0;
@@ -205,7 +218,8 @@ if (p2Throws == p2Limit){
         evP1.addEventListener('click', p1ThrowBag)
         const evP2 = document.querySelector('.p2Throw')
         evP2.addEventListener('click', p2ThrowBag) 
-        setTimeout(winner, 2000)
+        won()
+        setTimeout(winner, 4000)
         // winner()
         }
         // new round listener
@@ -245,6 +259,8 @@ if (p2Throws == p2Limit){
                 player2Total = 0;
                 displayTotal()
                 displayRound()
+                const bg = document.querySelector('body')
+                bg.setAttribute('style', 'background-color:  rgb(55, 39, 39)')
             }
             else {
                 alert('Thanks for playing')
