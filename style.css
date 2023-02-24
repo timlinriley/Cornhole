@@ -1,13 +1,19 @@
 body{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
+h1{
+    text-align: center;
+}
+
 .throwButtons{
     display: flex;
     flex-wrap: wrap;
     width: 300px;
     margin: 1em;
 }
-.p1Throw, .p2Throw {
+
+.p1Throw{
     border: solid black;
     height: 35px;
     width: 100px;
@@ -15,6 +21,26 @@ body{
     text-align: center;
     padding-top: 15px;
     border-radius: 20%;
+    background-color: red;
+    color: white;
+}
+
+.p2Throw {
+    border: solid black;
+    height: 35px;
+    width: 100px;
+    margin: 1em;
+    text-align: center;
+    padding-top: 15px;
+    border-radius: 20%;
+    background-color: blue;
+    color: white;
+}
+
+.p1Throw:hover, .p2Throw:hover{
+    cursor: pointer;
+    opacity: 0.6;
+
 }
 .newRound {
     border: solid black;
@@ -30,15 +56,23 @@ body{
 }
 .newRound:hover {
     opacity: 0.7;
+    cursor: pointer;
 }
 
 .roundScore, .totalScore {
     display: flex;
     margin: 5px;
+    font-weight:700;
+}
+
+.scoreBox{
+    display: flex;
 }
 
 .player1Total, .player2Total, .player1Round, .player2Round {
     margin-left: 2em;
+    margin-top: 60px;
+    margin-right: 60px;
 }
 
 
@@ -161,7 +195,7 @@ body{
     height: 30px;
     background-color: red;
     border-radius: 25%;
-    animation: p1B2Hole forwards 1s;  
+    animation: p1B2Off forwards 1s;  
 }
 
 .p1b2Hole{
@@ -188,7 +222,7 @@ body{
     height: 30px;
     background-color: red;
     border-radius: 25%;
-    animation: p1B3Hole forwards 1s;  
+    animation: p1B3Off forwards 1s;  
 }
 
 .p1b3Hole{
@@ -215,7 +249,7 @@ body{
     height: 30px;
     background-color: red;
     border-radius: 25%;
-    animation: p1B4Hole forwards 1s;  
+    animation: p1B4Off forwards 1s;  
 }
 
 .p1b4Hole{
@@ -298,7 +332,7 @@ body{
     animation: p2B3Off forwards 1s;  
 }
 
-.p1b3Hole{
+.p2b3Hole{
     width: 30px;
     height: 30px;
     background-color: blue;
