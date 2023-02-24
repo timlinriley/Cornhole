@@ -87,8 +87,9 @@ const displayRound = () => {
                     console.log('p1 throw in the hole!')
                      player1Round += 3;
                 } 
-                displayRound()
+                setTimeout(displayRound, 1010)
                 p1Animate()
+                setTimeout(roundLead, 1010)
                 p1Limiter()
             }
 
@@ -108,9 +109,9 @@ const displayRound = () => {
                     console.log('p2 throw in the hole!')
                      player2Round += 3;
                 } 
-                displayRound()
+                setTimeout(displayRound,1010)
                 p2Animate()
-                roundLead()
+                setTimeout(roundLead, 1010)
                 p2Limiter()            
             }
 // throw button on click:
