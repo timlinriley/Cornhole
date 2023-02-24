@@ -204,7 +204,8 @@ if (p2Throws == p2Limit){
         evP1.addEventListener('click', p1ThrowBag)
         const evP2 = document.querySelector('.p2Throw')
         evP2.addEventListener('click', p2ThrowBag) 
-        winner()
+        setTimeout(winner, 2000)
+        // winner()
         }
         // new round listener
 
@@ -219,7 +220,7 @@ if (p2Throws == p2Limit){
     const winner = () => {
         if (player1Total >= 21){
           const winState = prompt(`Player 1 wins! To play again enter 'a' or 'b' to exit`)
-            if (winState.toLowerCase() === 'a'){
+            if (winState === 'a'){
                 p1Throws = 0;
                 p2Throws = 0;
                 player1Round = 0;
@@ -249,7 +250,7 @@ if (p2Throws == p2Limit){
             }
         } 
     }
- 
+
     // after round complete:
        
  
