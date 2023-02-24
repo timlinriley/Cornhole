@@ -338,3 +338,27 @@ const resetBags = () => {
     p2b4 = document.querySelector('#p2b4')
     p2b4.setAttribute('class', 'p2Bag4')
 }
+
+// Change 'Venues':
+
+const beach = () => {
+    let bg = document.querySelector('.gameBoard');
+    bg.setAttribute("style", "background-image: url('https://www.surfertoday.com/images/jamp/page/beach-quotes.jpg')")
+}
+
+const backyard = () => {
+    let bg = document.querySelector('.gameBoard');
+    bg.setAttribute("style", "background-image: url('https://images.contentstack.io/v3/assets/blt3840fc786435e65e/blt953a26bf776f175c/6363b40032031b1042c62d27/photo_14598_(1).jpg')")
+}
+
+const bar = () => {
+    let bg = document.querySelector('.gameBoard');
+    bg.setAttribute("style", "background-image: url('https://ca-times.brightspotcdn.com/dims4/default/12b1a2f/2147483647/strip/true/crop/3502x2338+0+0/resize/1200x801!/quality/80/?url=https%3A%2F%2Fcalifornia-times-brightspot.s3.amazonaws.com%2F14%2Ffd%2F80d142b74cb197ea093a67c7de87%2Fthe-garten-photo-credit-jake-takeo-3.JPG')")
+}
+
+
+const campground = () => {
+    let bg = document.querySelector('.gameBoard');
+    bg.setAttribute("style", "background-image: url('https://www.appletonmn.com/vertical/Sites/%7B4405B7C1-A469-4999-9BC5-EC3962355392%7D/uploads/campground_(2).jpg')")
+}
+

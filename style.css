@@ -1,5 +1,7 @@
 body{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: rgb(55, 39, 39);
+    color: white;
 }
 
 h1{
@@ -90,7 +92,8 @@ h1{
 }
 
 .p1Board, .p2Board {
-    border: solid blue;
+    border: double brown;
+    border-width: 6px;
     width: 180px;
     height: 220px;
     margin-top: 80px;
@@ -109,7 +112,7 @@ h1{
 }
 
 .circle{
-    border: solid black;
+    border: solid brown;
     background-color: white;
     height: 60px;
     width: 60px;
@@ -150,8 +153,27 @@ h1{
     border-radius: 25%;
 }
 
+.venueButtons{
+    margin-top: 2em;
+    display: flex;
+    width: 800px;
+    justify-content: space-evenly;
 
+}
 
+.venue{
+    border: solid white;
+    width: 150px;
+    text-align: center;
+    height: 35px;
+    padding-top: 10px;    
+    border-radius: 10%;
+    background-color: black;
+}
+.venue:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
 /* Animated bag classes to switch to on throw click */
 
 /* P1 B1 */
