@@ -69,6 +69,23 @@ h1{
 
 .scoreBox{
     display: flex;
+    border: solid white;
+    width: 70%;
+    /* height: 200px; */
+}
+
+.scoreBoxP1{
+    background-color: red;
+    display: flex;
+    border: solid white;
+    width: 70%;
+}
+
+.scoreBoxP1{
+    background-color: blue;
+    display: flex;
+    border: solid white;
+    width: 70%;
 }
 
 .player1Total, .player2Total, .player1Round, .player2Round {
@@ -85,6 +102,7 @@ h1{
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    background-size: cover;
 }
 .gamePlay {
     display: flex;
@@ -113,6 +131,7 @@ h1{
 
 .circle{
     border: solid brown;
+    border-width: 3px;
     background-color: white;
     height: 60px;
     width: 60px;

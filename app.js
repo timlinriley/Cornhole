@@ -10,6 +10,18 @@
     // Button to initialize game and reset scores to 0
 
     // display total scores function
+    const winning = () => {
+        if (player1Total > player2Total){
+            const bg = document.querySelector('.scoreBox')
+            bg.setAttribute('class', 'scoreBoxP1')
+        }
+        else if (player1Total < player2Total){
+            const bg1 = document.querySelector('.scoreBox')
+            bg1.setAttribute('class', 'scoreBoxP2')
+        } else {}
+    }
+
+
 let player1Total = 0;
 let player2Total = 0;
     const displayTotal = () => {
@@ -17,15 +29,16 @@ let player2Total = 0;
         p1.innerHTML = `Player 1 Total: ${player1Total}`
         let p2 = document.querySelector('.player2Total')
         p2.innerHTML = `Player 2 Total: ${player2Total}`
+        winning()
     }
     // display round scores
 let player1Round = 0;
 let player2Round = 0;
 const displayRound = () => {
     let p1 = document.querySelector('.player1Round')
-    p1.innerHTML = `Player 1 Round Score: ${player1Round}`
+    p1.innerHTML = `Player 1 Round: ${player1Round}`
     let p2 = document.querySelector('.player2Round')
-    p2.innerHTML = `Player 2 Round Score: ${player2Round}`
+    p2.innerHTML = `Player 2 Round: ${player2Round}`
 }
 displayRound()
 displayTotal()
@@ -176,6 +189,9 @@ if (p2Throws == p2Limit){
     const nr = document.querySelector('.newRound')
     nr.addEventListener('click', newRound) 
       
+
+
+        
 
 //  maybe add change to bg color to match winner bag color to indicate win as well that then switches back once the prompt is run. 
     const winner = () => {
