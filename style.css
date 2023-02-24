@@ -61,39 +61,85 @@ h1{
     cursor: pointer;
 }
 
-.roundScore, .totalScore {
+/* .roundScore, .totalScore {
     display: flex;
     margin: 5px;
     font-weight:700;
-}
+} */
 
 .scoreBox{
     display: flex;
-    border: solid white;
+        /* border: solid green; */
     width: 70%;
+    height: 140px;
     /* height: 200px; */
 }
 
-.scoreBoxP1{
+
+.totalScore{
+    /* border: solid white; */
+    width: 50%;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
+}
+
+.totalScoreP1{
     background-color: red;
+    width: 50%;
     display: flex;
-    border: solid white;
-    width: 70%;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
 }
-
-.scoreBoxP1{
-    background-color: blue;
+.totalScoreP2{
+    background-color:  blue;
+    width: 50%;
     display: flex;
-    border: solid white;
-    width: 70%;
+    flex-wrap:wrap;
+    justify-content: space-evenly;
 }
-
+.totalText{
+    /* border: solid blue; */
+    height: 40%;
+    width: 100%;
+    font-size: 50px;
+    text-align: center;
+}
 .player1Total, .player2Total, .player1Round, .player2Round {
-    margin-left: 2em;
-    margin-top: 60px;
-    margin-right: 60px;
+    /* border: solid red; */
+    width: 40%;
+    height: 40%;
+}
+.roundScore{
+    /* border: solid white; */
+    width: 50%;
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.roundScoreP1{
+    background-color: red;
+    width: 50%;
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
+.roundScoreP2{
+   background-color: blue;
+    width: 50%;
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.roundText{
+    /* border: solid blue; */
+    height: 40%;
+    width: 100%;
+    font-size: 50px;
+    text-align: center;
+}
 
 .gameBoard{
     border: solid black;

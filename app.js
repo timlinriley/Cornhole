@@ -12,36 +12,57 @@
     // display total scores function
     const winning = () => {
         if (player1Total > player2Total){
-            const bg = document.querySelector('.scoreBox')
-            bg.setAttribute('class', 'scoreBoxP1')
+            const bg = document.querySelector('#TS')
+            bg.setAttribute('class', 'totalScoreP1')
         }
         else if (player1Total < player2Total){
-            const bg1 = document.querySelector('.scoreBox')
-            bg1.setAttribute('class', 'scoreBoxP2')
-        } else {}
+            const bg1 = document.querySelector('#TS')
+            bg1.setAttribute('class', 'totalScoreP2')
+        } else {
+            const bg2 = document.querySelector('#TS')
+            bg2.setAttribute('class', 'totalScore')
+        }
     }
 
-
+    const roundLead = () => {
+        if (player1Round > player2Round){
+            const bg = document.querySelector('#RS')
+            bg.setAttribute('class', 'roundScoreP1' )
+        }
+        else if (player1Round < player2Round){
+            const bg2 = document.querySelector('#RS')
+             bg2.setAttribute('class', 'roundScoreP2' )
+        } else {
+            const bg3 = document.querySelector('#RS')
+            bg3.setAttribute('class', 'roundScore' )
+        }
+    }   
+    
 let player1Total = 0;
 let player2Total = 0;
     const displayTotal = () => {
-        let p1 = document.querySelector('.player1Total')
-        p1.innerHTML = `Player 1 Total: ${player1Total}`
-        let p2 = document.querySelector('.player2Total')
-        p2.innerHTML = `Player 2 Total: ${player2Total}`
+        let p1 = document.querySelector('.p1t')
+        p1.innerHTML =` ${player1Total}`
+        p1.setAttribute('style','font-size: 60px;')
+        let p2 = document.querySelector('.p2t')
+        p2.innerHTML = ` ${player2Total}`
+        p2.setAttribute('style','font-size: 60px;')
         winning()
     }
     // display round scores
 let player1Round = 0;
 let player2Round = 0;
 const displayRound = () => {
-    let p1 = document.querySelector('.player1Round')
-    p1.innerHTML = `Player 1 Round: ${player1Round}`
-    let p2 = document.querySelector('.player2Round')
-    p2.innerHTML = `Player 2 Round: ${player2Round}`
+    let p1 = document.querySelector('.p1r')
+    p1.innerHTML = ` ${player1Round}`
+    p1.setAttribute('style','font-size: 60px;')
+    let p2 = document.querySelector('.p2r')
+    p2.innerHTML = ` ${player2Round}`
+    p2.setAttribute('style','font-size: 60px;')
+    roundLead()
 }
-displayRound()
-displayTotal()
+// displayRound()
+// displayTotal()
     // Throwing:
     let throwOutcome = 0
             // assign throw outcome potential based on %:
@@ -89,6 +110,7 @@ displayTotal()
                 } 
                 displayRound()
                 p2Animate()
+                roundLead()
                 p2Limiter()            
             }
 // throw button on click:
