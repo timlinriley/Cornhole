@@ -256,10 +256,21 @@ li {
 }
 
 .insButton{
-    width: 120px;
-    height: 80px;
-    border: yellow solid;
-    margin-top: 2em;
+    border: solid black;
+    width: 100px;
+    border: solid black;
+    height: 35px;
+    width: 100px;
+    margin-left: 1em;
+    margin-top: 3em;
+    text-align: center;
+    padding-top: 15px;
+    border-radius: 20%;
+    background-color: gray;
+}
+.insButton:hover {
+    opacity: 0.7;
+    cursor: pointer;
 }
 /* Animated bag classes to switch to on throw click */
 
