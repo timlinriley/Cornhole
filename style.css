@@ -69,7 +69,7 @@ h1{
 
 .scoreBox{
     display: flex;
-        /* border: solid green; */
+        border: solid green;
     width: 70%;
     height: 140px;
     /* height: 200px; */
@@ -253,6 +253,13 @@ h1{
 li {
     font-size: 20px;
     line-height: 1.8;
+}
+
+.insButton{
+    width: 120px;
+    height: 80px;
+    border: yellow solid;
+    margin-top: 2em;
 }
 /* Animated bag classes to switch to on throw click */
 
