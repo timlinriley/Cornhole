@@ -37,6 +37,8 @@
             bg3.setAttribute('class', 'roundScore' )
         }
     }   
+
+    //  Setting background color of body to indicate winner; updating wins total
     const won = () => {
         if (player1Total >= 21){
             const bg = document.querySelector('body')
