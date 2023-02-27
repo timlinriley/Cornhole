@@ -49,6 +49,7 @@
             const bg = document.querySelector('body')
             bg.setAttribute('style', "background-color:  rgb(55, 39, 39)")
         }
+        displayDubs()
     }
     
 let player1Total = 0;
