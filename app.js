@@ -406,7 +406,7 @@ const p2Animate = () => {
         b4c.setAttribute('class', 'p2b4Hole')
     }
 }
-
+//  Reset bags. Called in 'new round' function. Allows for new round to be reset and animations to occur again as well:
 const resetBags = () => {
     p1b1 = document.querySelector('#p1b1')
     p1b1.setAttribute('class', 'p1Bag1')
