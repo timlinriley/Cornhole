@@ -355,7 +355,7 @@ const p1Animate = () => {
         b4c.setAttribute('class', 'p1b4Hole')
     }
 }
-
+// changes bag classes for p2 throws and bags on click:
 const p2Animate = () => {
     if (p2Throws === 1 && throwOutcome <= 0.4){
         b1 = document.querySelector('.p2Bag1')
