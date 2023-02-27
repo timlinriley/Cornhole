@@ -23,7 +23,7 @@
             bg2.setAttribute('class', 'totalScore')
         }
     }
-
+        //  changes background color of round score box to highlight who is in lead in the round:
     const roundLead = () => {
         if (player1Round > player2Round){
             const bg = document.querySelector('#RS')
