@@ -188,7 +188,7 @@ if (p1Throws == p1Limit){
     evP1.removeEventListener('click', p1ThrowBag)
 }
 }
-        // player B throws 4 times
+        // player B throws only 4 times
 const evP2 = document.querySelector('.p2Throw')
 evP2.addEventListener('click', p2ThrowBag) 
 const p2Limiter = () => {
@@ -259,7 +259,7 @@ if (p2Throws == p2Limit){
 
 
         
-
+//  Win State: sets prompt when player reaches winning score of 21:
 //  maybe add change to bg color to match winner bag color to indicate win as well that then switches back once the prompt is run. 
     const winner = () => {
         if (player1Total >= 21){
