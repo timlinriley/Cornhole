@@ -112,10 +112,12 @@ const displayDubs = () => {
                 if (throwOutcome <= 0.4){
                     console.log('p1 throw landed off board')
                     }
+              // land on board:
                 else if (throwOutcome > 0.4 && throwOutcome <= 0.8){
                     console.log('p1 throw landed on board')
                      player1Round += 1;
                 }
+              // land in hole: 
                 else {
                     console.log('p1 throw in the hole!')
                      player1Round += 3;
