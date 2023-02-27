@@ -78,6 +78,8 @@ const displayRound = () => {
     roundLead()
 }
 
+
+// tracks and displays total game winner count:
 let player1Dubs = 0;
 let player2Dubs = 0;
 const displayDubs = () => {
