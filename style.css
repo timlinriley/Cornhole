@@ -70,7 +70,7 @@ h1{
 .scoreBox{
     display: flex;
         border: solid green;
-    width: 70%;
+    width: 99%;
     height: 140px;
     /* height: 200px; */
 }
@@ -78,7 +78,7 @@ h1{
 
 .totalScore{
     /* border: solid white; */
-    width: 50%;
+    width: 30%;
     display: flex;
     flex-wrap:wrap;
     justify-content: space-evenly;
@@ -112,7 +112,7 @@ h1{
 }
 .roundScore{
     /* border: solid white; */
-    width: 50%;
+    width: 30%;
     display: flex; 
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -139,6 +139,11 @@ h1{
     width: 100%;
     font-size: 50px;
     text-align: center;
+}
+
+.winTracker {
+    border: solid blue;
+    width: 30%;
 }
 
 .gameBoard{

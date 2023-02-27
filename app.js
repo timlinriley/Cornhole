@@ -424,3 +424,4 @@ const instructions = () => {
     let ins = document.querySelector('.instructions')
     ins.setAttribute("style", "display:block")
 }
+
