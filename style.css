@@ -239,6 +239,12 @@ h1{
     cursor: pointer;
     opacity: 0.5;
 }
+
+.instructions {
+    width: 500px;
+    height: 500px;
+    
+}
 /* Animated bag classes to switch to on throw click */
 
 /* P1 B1 */
@@ -460,7 +466,7 @@ h1{
 /* p1 b1 */
 
 @keyframes p1B1On {
-    0%{transform:translate(px, 0px;)}
+    0%{transform:translate(px, 0px)}
     100%{transform: translate(25px,-300px)}
 }
 
@@ -476,7 +482,7 @@ h1{
 /* p1 b2 */
 
 @keyframes p1B2On {
-    0%{transform:translate(px, 0px;)}
+    0%{transform:translate(px, 0px)}
     100%{transform: translate(25px,-350px)}
 }
 
@@ -492,7 +498,7 @@ h1{
 /* P1 B3 */
 
 @keyframes p1B3On {
-    0%{transform:translate(px, 0px;)}
+    0%{transform:translate(px, 0px)}
     100%{transform: translate(25px,-350px)}
 }
 
@@ -508,7 +514,7 @@ h1{
 /* P1 B4 */
 
 @keyframes p1B4On {
-    0%{transform:translate(px, 0px;)}
+    0%{transform:translate(px, 0px)}
     100%{transform: translate(-35px,-300px)}
 }
 
@@ -528,7 +534,7 @@ h1{
 /* p2 b1 */
 
 @keyframes p2B1On {
-    0%{transform:translate(px, 0px;)}
+    0%{transform:translate(px, 0px)}
     100%{transform: translate(25px,-300px)}
 }
 
@@ -544,7 +550,7 @@ h1{
 /* p2 b2 */
 
 @keyframes p2B2On {
-    0%{transform:translate(px, 0px;)}
+    0%{transform:translate(px, 0px)}
     100%{transform: translate(25px,-350px)}
 }
 
@@ -560,7 +566,7 @@ h1{
 /* P2 B3 */
 
 @keyframes p2B3On {
-    0%{transform:translate(px, 0px;)}
+    0%{transform:translate(px, 0px)}
     100%{transform: translate(25px,-350px)}
 }
 
@@ -576,7 +582,7 @@ h1{
 /* P2 B4 */
 
 @keyframes p2B4On {
-    0%{transform:translate(px, 0px;)}
+    0%{transform:translate(px, 0px)}
     100%{transform: translate(-35px,-300px)}
 }
 
