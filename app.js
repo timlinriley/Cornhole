@@ -180,7 +180,7 @@ let p2Throws = 0
        
 let p1Limit = 4
 let p2Limit = 4
- // player A throws 4 times
+ // player A throws only 4 times
 const evP1 = document.querySelector('.p1Throw')
 evP1.addEventListener('click', p1ThrowBag) 
 const p1Limiter = () => {
