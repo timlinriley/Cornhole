@@ -244,6 +244,8 @@ if (p2Throws == p2Limit){
                 player2Total = 0;
                 displayTotal()
                 displayRound()
+                const bg = document.querySelector('body')
+                bg.setAttribute('style', 'background-color:  rgb(55, 39, 39)')
             }
             else {
                 alert('Thanks for playing')
