@@ -122,9 +122,13 @@ const displayDubs = () => {
                     console.log('p1 throw in the hole!')
                      player1Round += 3;
                 } 
+                // allows score display to match animation speed:
                 setTimeout(displayRound, 1010)
+                // animates throws on click:
                 p1Animate()
+                // allows roundLead background change to match animation speed:
                 setTimeout(roundLead, 1010)
+                // limits throws to 4:
                 p1Limiter()
             }
 
@@ -136,10 +140,12 @@ const displayDubs = () => {
                 if (throwOutcome <= 0.4){
                     console.log('p2 throw landed off board')
                     }
+            //   land on board
                 else if (throwOutcome > 0.4 && throwOutcome <= 0.8){
                     console.log('p2 throw landed on board')
                      player2Round += 1;
                 }
+            // land in hole:
                 else {
                     console.log('p2 throw in the hole!')
                      player2Round += 3;
@@ -159,6 +165,7 @@ const displayDubs = () => {
                 // player B thows: blue color appears on board
 let p1Throws = 0
 let p2Throws = 0
+// counts throws to allow a limit to be set:
             const p1ThrowCounter = () => {
                 p1Throws ++
                 console.log(p1Throws)
