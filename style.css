@@ -241,9 +241,18 @@ h1{
 }
 
 .instructions {
-    width: 500px;
+    width: 700px;
     height: 500px;
-    
+    border: solid white;
+    margin-top: 3em;
+    text-align: center;
+}
+.ins {
+    font-size: 50px;
+}
+li {
+    font-size: 20px;
+    line-height: 1.8;
 }
 /* Animated bag classes to switch to on throw click */
 
