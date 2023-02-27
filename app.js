@@ -420,3 +420,7 @@ const campground = () => {
     bg.setAttribute("style", "background-image: url('https://www.appletonmn.com/vertical/Sites/%7B4405B7C1-A469-4999-9BC5-EC3962355392%7D/uploads/campground_(2).jpg')")
 }
 
+const instructions = () => {
+    let ins = document.querySelector('.instructions')
+    ins.setAttribute("style", "display:block")
+}

@@ -246,6 +246,7 @@ h1{
     border: solid white;
     margin-top: 3em;
     text-align: center;
+    display: none;
 }
 .ins {
     font-size: 50px;
