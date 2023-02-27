@@ -86,14 +86,14 @@ h1{
 
 .totalScoreP1{
     background-color: red;
-    width: 50%;
+    width: 30%;
     display: flex;
     flex-wrap:wrap;
     justify-content: space-evenly;
 }
 .totalScoreP2{
     background-color:  blue;
-    width: 50%;
+    width: 30%;
     display: flex;
     flex-wrap:wrap;
     justify-content: space-evenly;
@@ -119,7 +119,7 @@ h1{
 }
 .roundScoreP1{
     background-color: red;
-    width: 50%;
+    width: 30%;
     display: flex; 
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -127,7 +127,7 @@ h1{
 
 .roundScoreP2{
    background-color: blue;
-    width: 50%;
+    width: 30%;
     display: flex; 
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -141,9 +141,13 @@ h1{
     text-align: center;
 }
 
-.winTracker {
-    border: solid blue;
-    width: 30%;
+
+
+.p1w {
+    font-size: 60px;
+}
+.p2w{
+    font-size: 60px;
 }
 
 .gameBoard{
