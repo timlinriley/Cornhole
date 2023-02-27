@@ -74,6 +74,21 @@ const displayRound = () => {
     p2.setAttribute('style','font-size: 60px;')
     roundLead()
 }
+
+let player1Dubs = 0;
+let player2Dubs = 0;
+const displayDubs = () => {
+    if (player1Total >= 21){
+        player1Dubs ++
+    }
+    else if (player2Total >= 21){
+        player2Dubs ++
+    }
+    let p1 = document.querySelector('.p1w')
+    p1.innerHTML = ` ${player1Dubs}`
+    let p2 = document.querySelector('.p2w')
+    p2.innerHTML = `${player2Dubs}`
+}
 // displayRound()
 // displayTotal()
     // Throwing:
