@@ -299,7 +299,7 @@ li {
     height: 30px;
     background-color: red;
     border-radius: 25%;
-    animation: p1B2Off forwards 1s;  
+    animation: p1B1Off forwards 1s;  
 }
 
 .p1b1Hole{
@@ -513,7 +513,7 @@ li {
 }
 @keyframes p1B1Off {
     0%{transform:translate(0,0)}
-    100%{transform:translate(-40px, -405px)}
+    100%{transform:translate(-32px, -405px)}
 }
 
 /* p1 b2 */
